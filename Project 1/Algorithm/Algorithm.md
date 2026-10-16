@@ -7,3 +7,11 @@ Calculate the degree of each node.
 Calculate the height of the tree.
 Display all the results.
 Stop the program.
+
+
+
+
+
+
+
+
