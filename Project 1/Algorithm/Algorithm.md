@@ -1,3 +1,5 @@
+##ALGORITHM
+
 1.Start the program.
 
 2.Create a tree using linked nodes.
