@@ -1,20 +1,20 @@
-Start the program.
+1.Start the program.
 
-Create a tree using linked nodes.
+2.Create a tree using linked nodes.
 
-Insert nodes into the tree.
+3.Insert nodes into the tree.
 
-Identify the root node.
+4.Identify the root node.
 
-Find the leaf nodes and internal nodes.
+5.Find the leaf nodes and internal nodes.
 
-Calculate the degree of each node.
+6.Calculate the degree of each node.
 
-Calculate the height of the tree.
+7.Calculate the height of the tree.
 
-Display all the results.
+8.Display all the results.
 
-Stop the program.
+9.Stop the program.
 
 
 
