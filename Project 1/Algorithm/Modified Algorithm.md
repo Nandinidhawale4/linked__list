@@ -1,21 +1,23 @@
-## ALGORITHM
+## Algorithm
 
-1 Start the program.
+1 Start the program
 
-2 Create a binary tree using linked nodes.
+2  Initialize an empty stack and Queue
+    
+3 Display the menu and read the user's choice
+    
+4 IF the choice is 1, enter the account number, account holder name, and balance. Insert the account into the Stack and Queue.
+    
+5 IF the choice is 2, delete the top account from the Stack
 
-3 Assign values to the nodes and construct the tree.
+6 IF the choice is 3, delete the front account from Queue.
+ 
+7 IF the choice is 4, display all accounts in the Queue.
 
-4 Identify and display the root node.
+8 IF the choice is 5, search for an accounts using its account number
 
-5 Display the parent and children of each node.
+9 IF the choice is 6, exit the program
 
-6 Calculate and display the degree of each node.
-
-7 Identify and display the leaf and internal nodes.
-
-8 Calculate and display the depth of each node.
-
-9 Calculate and display the height of the tree.
-
-10 Stop the program.
+10 Repeat the menu until the user chooses Exit
+ 
+11 Release dynamically allocated memory and stop.
