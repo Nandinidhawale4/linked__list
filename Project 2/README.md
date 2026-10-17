@@ -40,19 +40,19 @@ Let n be the total number of nodes in the tree.
 
 Operation                            Time Complexity   
 
-Tree Construction                      O(n)
+1 Tree Construction                      O(n)
 
-Finding Root Node                      O(1)
+2 Finding Root Node                      O(1)
 
-Identifying Leaf Nodes                 O(n)
+3 Identifying Leaf Nodes                 O(n)
 
-Identifying Internal Nodes             O(n)
+4 Identifying Internal Nodes             O(n)
 
-Calculating Degree of Each Node        O(n)
+5 Calculating Degree of Each Node        O(n)
 
-Calculating Height of Tree             O(n)
+6 Calculating Height of Tree             O(n)
 
-Displaying Tree Terminology            O(n)
+7 Displaying Tree Terminology            O(n)
 
 Overall Time Complexity: O(n)
 
