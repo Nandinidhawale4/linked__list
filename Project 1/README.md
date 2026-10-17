@@ -24,153 +24,16 @@ To understand pointers and dynamic memory allocation.
 7. Repeat operations according to the user's choice.
 8. Stop.
 
+## time complexity
+Operation	
+Time Complexity 
 
-## Flowchart: Linked List Operations
+Insertion (at Beginning)       O(1)	
+Insertion (at End)	           O(N)
+Deletion	                     O(N)
+Searching	                     O(N)
+Display All	                   O(N)	
 
-             +---------+
-             |  START  |
-             +---------+
-                  |
-                  v
-       +---------------------+
-       | Initialize head=NULL|
-       +---------------------+
-                  |
-                  v
-       /---------------------\
-      / Display menu and      \
-      \ enter choice          /
-       \---------------------/
-                  |
-                  v
-       +---------------------+
-       | Perform Selected    |
-       | Operation:          |
-       | Insert / Delete /   |
-       | Search / Display    |
-       +---------------------+
-                  |
-                  v
-             +---------+
-             |  Exit?  |
-             +---------+
-              /       \
-           No           Yes
-            |             |
-            |             v
-            |        +---------+
-            |        |   END   |
-            |        +---------+
-            |
-            +----> Return to
-           Display Menu
-           
-## Code
+## conclusion
 
-#include <iostream>
-using namespace std;
-
-struct Node {
-    int acc;
-    string name;
-    float bal;
-    Node *next;
-};
-
-Node *head = NULL;
-
-void insert() {
-    Node *p = new Node;
-    cin >> p->acc >> p->name >> p->bal;
-    p->next = head;
-    head = p;
-}
-
-void deleteAcc() {
-    int x;
-    cin >> x;
-    Node *p = head, *q = NULL;
-
-    while (p && p->acc != x) {
-        q = p;
-        p = p->next;
-    }
-
-    if (!p) return;
-    if (q) q->next = p->next;
-    else head = p->next;
-    delete p;
-}
-
-void search() {
-    int x;
-    cin >> x;
-    Node *p = head;
-
-    while (p) {
-        if (p->acc == x) {
-            cout << p->acc << " " << p->name
-                 << " " << p->bal << endl;
-            return;
-        }
-        p = p->next;
-    }
-    cout << "Not Found";
-}
-
-void display() {
-    Node *p = head;
-    while (p) {
-        cout << p->acc << " " << p->name
-             << " " << p->bal << endl;
-        p = p->next;
-    }
-}
-
-int main() {
-    int ch;
-
-    do {
-        cout << "\n1.Insert  2.Delete  3.Search  4.Display  5.Exit\n";
-        cin >> ch;
-
-        if (ch == 1) insert();
-        else if (ch == 2) deleteAcc();
-        else if (ch == 3) search();
-        else if (ch == 4) display();
-
-    } while (ch != 5);
-
-    return 0;
-}
-
-## Output
-
-1.Insert  2.Delete  3.Search  4.Display  5.Exit
-1
-101 Gaurav 5000
-
-1.Insert  2.Delete  3.Search  4.Display  5.Exit
-1
-102 Rahul 7000
-
-1.Insert  2.Delete  3.Search  4.Display  5.Exit
-4
-102 Rahul 7000
-101 Gaurav 5000
-
-1.Insert  2.Delete  3.Search  4.Display  5.Exit
-3
-101
-101 Gaurav 5000
-
-1.Insert  2.Delete  3.Search  4.Display  5.Exit
-2
-102
-
-1.Insert  2.Delete  3.Search  4.Display  5.Exit
-4
-101 Gaurav 5000
-
-1.Insert  2.Delete  3.Search  4.Display  5.Exit
-5
+By implementing the Bank Account Management System using a singly linked list in C++, the fundamental concepts of dynamic memory allocation and pointer manipulation are successfully applied to a real-world scenario. Unlike static arrays, the linked list structure allows bank records to be added or removed dynamically without wasting memory or requiring predefined limits. Developing core operations such as insertion, deletion, searching, and display provides a practical understanding of linear data structures, algorithm efficiency, and sequential data traversal, establishing a solid foundation for managing more complex dynamic databases.
