@@ -30,12 +30,19 @@ A stack is used to manage account operations in Last In, First Out (LIFO) order,
  Operation                                      Time Complexity
  
 Stack Push                                 :-           O(1)
+
 Stack Pop                                  :-           O(1)
+
 Queue Enqueue                              :-           O(1)
+
 Queue Dequeue                              :-           O(1)
+
 Display Accounts                           :-           O(n)
+
 Search Account                             :-           O(n)
+
 Insert at the beginning of a linked list   :-           O(1)
+
 Space Complexity                           :-           O(n)
 
 ## conclusion
