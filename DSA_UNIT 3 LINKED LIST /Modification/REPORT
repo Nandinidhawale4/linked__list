@@ -1,1 +1,5 @@
+## Problem statement 
 
+To implement a Bank Account Management System using stack and queue with dynamic memory allocation in C++. The system stores bank account details such as account number, account holder name, and balance using dynamically allocated linked nodes.
+
+A stack is used to manage account operations in Last In, First Out (LIFO) order, while a queue is used to manage account operations in First In, First Out (FIFO) order. The system supports insertion, deletion, searching, and displaying account details. Dynamic memory allocation allows memory to be allocated and released as required.
